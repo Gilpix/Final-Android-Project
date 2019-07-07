@@ -37,6 +37,31 @@ Run the app. Congratulations! you just used Android Picasso library to download 
  
  
  
-                             ******* Android Picasso Library Tutorial ********
+                             ******* Android RecyclerView Tutorial ********
 
- 
+The RecyclerView class extends the ViewGroup class and implements ScrollingView interface. It is introduced in Marshmallow. It is an advanced version of the ListView with improved performance and other benefits.
+
+In this tutorial, we will create a list of items with ImageView (for the icon) and TextView (for description) using RecyclerView and performs click listener on the item of its list.
+
+Step 1 :  Create an Android project, and add the RecyclerView support library com.android.support:recyclerview-v7:23.1.0 or above this version in build.gradle file.
+
+Step 2 :  In the activity_recycle.xml file in layout directory, add the RecyclerView widget.
+Check activity_recycle.xml in above project.
+
+Step 3 :  Create a custom layout list_item.xml file and add textview and imageview.
+Check list_item.xml in above project.
+
+Step 4 :  Create a border.xml file in the drawable directory which is used to decorate the border of RecyclerView items.
+Check border.xml in above project.
+
+Step 5 :  Create a MyListData.java class with the following code. This class is used as (POJO) class which sets the properties of the items.
+Check MyListData.java in above project.
+
+Step 6 :  Create a MyListAdapter.java class and add the following code. This class extends RecyclerView.Adapter class and override its unimplemented methods. The onCreateViewHolder() methods inflates the list_item.xml. In the onBindViewHolder() method each data items are set to each row.
+Check MyListAdapter.java in above project.
+
+Step 7 :  Finally, in Recycle.java class create the array of items for MyListData class and set the adapter class to RecyclerView.
+Check Recycle.java in above project.
+
+Run the app. Congratulations! you just created RecyclerView in Android.
+
