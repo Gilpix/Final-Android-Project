@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.padda.listviewdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ANDROID FINAL PROJECT"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@drawable/border" />
+
+        <activity android:name=".Recycler" />
+        <activity android:name=".Picasso" />
+        <activity android:name=".Demo" />
+        <activity android:name=".Tutorials" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".IntentsSecond" />
+        <activity android:name=".Fragments" />
+        <activity android:name=".Intents" />
+        <activity android:name=".Sensors" />
+        <activity android:name=".LifeCycle" />
+        <activity android:name=".GridLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
