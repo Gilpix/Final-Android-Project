@@ -20,9 +20,9 @@ public class Tutorials extends AppCompatActivity {
 
     ListView list;
     ImageView im;
-    String  name []={"Activity Life Cycle","Sensor","Intent","Fragment",};
+    String  name []={"Activity Life Cycle","Sensor","Intent","Fragment","Picasso","Recycler View"};
 
-    int signsImage[] = {R.drawable.t,R.drawable.t,R.drawable.t,R.drawable.t
+    int signsImage[] = {R.drawable.t,R.drawable.t,R.drawable.t,R.drawable.t,R.drawable.t,R.drawable.t
             };
 
     @Override
@@ -72,6 +72,20 @@ public class Tutorials extends AppCompatActivity {
                     case 4:
                         Intent d = new Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com/guide/components/fragments"));
                         startActivity(d);
+
+                        break;
+
+
+                    case 5:
+                        Intent e = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.simplifiedcoding.net/picasso-android-tutorial-picasso-image-loader-library/"));
+                        startActivity(e);
+
+                        break;
+
+
+                    case 6:
+                        Intent f = new Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com/guide/topics/ui/layout/recyclerview"));
+                        startActivity(f);
 
                         break;
 

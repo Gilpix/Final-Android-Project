@@ -2,6 +2,7 @@ package com.padda.listviewdemo;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,11 +18,12 @@ public class GridLayout extends Activity {
 
 
         GridView gridView;
+    TextView GridViewItems;
 
         static final String[] numbers = new String[] {
 
 
-                "Tutorials", "Demo"
+                "LEARN TUTORIALS", "DISPLAY DEMO"
 
 
         };
@@ -38,9 +40,10 @@ public class GridLayout extends Activity {
 
             // Create adapter to set value for grid view
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                    android.R.layout.simple_list_item_1, numbers);
+                    android.R.layout.simple_selectable_list_item, numbers);
 
             gridView.setAdapter(adapter);
+            //gridView.setBackgroundColor(R.drawable.b);
 
             gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -48,6 +51,19 @@ public class GridLayout extends Activity {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View v,
                                         int position, long id) {
+                    //TextView tv = (TextView) v;
+                    // Set the current selected item background color
+                    //tv.setBackgroundColor(Color.parseColor("#FF9AD082"));
+                    GridViewItems = (TextView) v;
+
+                    GridViewItems.setBackgroundColor(Color.parseColor("#f85d4f"));
+
+                    GridViewItems.setTextColor(Color.parseColor("#fdfcfa"));
+
+                    GridViewItems.setAllCaps(true);
+                    GridViewItems.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+
+
 
 
                     switch(position+1)
@@ -80,3 +96,4 @@ public class GridLayout extends Activity {
         }
 
     }
+
